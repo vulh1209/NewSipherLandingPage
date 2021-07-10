@@ -29,37 +29,37 @@ const CT2 = styled.div`
   }
   @keyframes _toActive1 {
     0% {
-      transform: rotate3d(1, 0.5, 0.5, 145deg) translate3d(10px, -162px, -335px);
+      transform: rotate3d(0, 0.35, 0.5, 135deg) translate3d(10px, -162px, -335px) scale3d(0.5, 0.5, 0.5);
       opacity: 0.5;
     }
     100% {
-      transform: rotate3d(0) translate3d(0);
+      transform: rotate3d(0) translate3d(0) scale3d(0);
     }
   }
   @keyframes _toActive2 {
     0% {
-      transform: rotate3d(0.75, 1, 0.5, 245deg) translate3d(20px, -262px, -235px);
+      transform: rotate3d(0, 0.45, 0.5, 135deg) translate3d(20px, -262px, -235px) scale3d(0.5, 0.5, 0.5);
       opacity: 0.5;
     }
     100% {
-      transform: rotate3d(0) translate3d(0);
+      transform: rotate3d(0) translate3d(0) scale3d(0);
     }
   }
   @keyframes _toDeactive1 {
     0% {
-      transform: rotate3d(0) translate3d(0);
+      transform: rotate3d(0) translate3d(0) scale3d(0);
     }
     100% {
-      transform: rotate3d(1, 0.5, 0.5, 145deg) translate3d(10px, -162px, -335px);
+      transform: rotate3d(0, 0.35, 0.5, 135deg) translate3d(10px, -162px, -335px) scale3d(0.5, 0.5, 0.5);
       opacity: 0.5;
     }
   }
   @keyframes _toDeactive2 {
     0% {
-      transform: rotate3d(0) translate3d(0);
+      transform: rotate3d(0) translate3d(0) scale3d(0);
     }
     100% {
-      transform: rotate3d(0.75, 1, 0.5, 245deg) translate3d(20px, -262px, -235px);
+      transform: rotate3d(0, 0.45, 0.5, 135deg) translate3d(20px, -262px, -235px) scale3d(0.5, 0.5, 0.5);
       opacity: 0.5;
     }
   }
@@ -69,7 +69,29 @@ export default function Content2({Page}) {
   return (
     <CT2>
       <h2 className={Page !== 2 ? "Active2" : "Deactive2"}>Welcome to</h2>
+      <h2 className={Page !== 2 ? "Active1" : "Deactive1"}>Welcome to</h2>
+      <h2 className={Page !== 2 ? "Active2" : "Deactive2"}>Welcome to</h2>
+      <h2 className={Page !== 2 ? "Active1" : "Deactive1"}>Welcome to</h2>
+      <h2 className={Page !== 2 ? "Active2" : "Deactive2"}>Welcome to</h2>
       <h1 className={Page !== 2 ? "Active1" : "Deactive1"}>SYPHERIA</h1>
+      <p className={Page !== 2 ? "Active2" : "Deactive2"}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+      </p>
+      <p className={Page !== 2 ? "Active2" : "Deactive2"}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+      </p>
+      <p className={Page !== 2 ? "Active1" : "Deactive1"}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+      </p>
       <p className={Page !== 2 ? "Active2" : "Deactive2"}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Consectetur

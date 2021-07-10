@@ -38,37 +38,37 @@ const CT1 = styled.div`
   }
   @keyframes _toActive1 {
     0% {
-      transform: rotate3d(1, 0.5, 1, 145deg) translate3d(50px, -262px, -135px);
+      transform: rotate3d(1, 0.5, 1, 225deg) translate3d(50px, -262px, -135px) scale3d(0.5, 0.5, 0.5);
       opacity: 0.5;
     }
     100% {
-      transform: rotate3d(0) translate3d(0);
+      transform: rotate3d(0) translate3d(0) scale3d(0);
     }
   }
   @keyframes _toActive2 {
     0% {
-      transform: rotate3d(1, 1, 0.5, 245deg) translate3d(80px, -162px, -235px);
+      transform: rotate3d(1, 1, 0.5, 245deg) translate3d(80px, -162px, -235px) scale3d(0.5, 0.5, 0.5);
       opacity: 0.5;
     }
     100% {
-      transform: rotate3d(0) translate3d(0);
+      transform: rotate3d(0) translate3d(0) scale3d(0);
     }
   }
   @keyframes _toDeactive1 {
     0% {
-      transform: rotate3d(0) translate3d(0);
+      transform: rotate3d(0) translate3d(0) scale3d(0);
     }
     100% {
-      transform: rotate3d(1, 0.5, 1, 145deg) translate3d(50px, -262px, -135px);
+      transform: rotate3d(1, 0.5, 1, 225deg) translate3d(50px, -262px, -135px) scale3d(0.5, 0.5, 0.5);
       opacity: 0.5;
     }
   }
   @keyframes _toDeactive2 {
     0% {
-      transform: rotate3d(0) translate3d(0);
+      transform: rotate3d(0) translate3d(0) scale3d(0);
     }
     100% {
-      transform: rotate3d(1, 1, 0.5, 245deg) translate3d(80px, -162px, -235px);
+      transform: rotate3d(1, 1, 0.5, 225deg) translate3d(80px, -162px, -235px) scale3d(0.5, 0.5, 0.5);
       opacity: 0.5;
     }
   }
